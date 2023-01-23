@@ -15,9 +15,5 @@ int IntputInt(string message)
 
 int a = IntputInt("Введите делимое число");
 int b = IntputInt("Введите делитель");
-while (a >= b)
-{
-    a = a - b;
-}
-if (a == 0) Console.WriteLine("кратно");
-else Console.WriteLine("не кратно, остаток " +a );
+if (a%b == 0) Console.WriteLine("кратно");
+else Console.WriteLine("не кратно, остаток " +a%b );
